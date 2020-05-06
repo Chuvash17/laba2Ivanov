@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+<link rel="stylesheet" href="dopolnenie3.css">
+ <title>HTML Document</title>
+ </head>
+ <body>
+<h1>Практическая часть</h1>
+<p>
+<b>3.Взаимодействие с пользователем</b>
+</p>
+<script>
+if (confirm('Доброго времени суток, у этой страницы есть к вам вопрос, вы готовы ответить?'))
+{
+var age = prompt('Сколько вам лет?','Введите ваш возраст')
+while(confirm('Вы уверены, что вам ' +age + '?')==false)
+var age = prompt('Сколько вам лет?')
+document.writeln("Ваш возраст - " +age + '.')
+}
+document.writeln("<br>Спасибо, что уделилили время!</br>" ) 
+</script>
+</body>
+</html>
